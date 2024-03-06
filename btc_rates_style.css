@@ -1,0 +1,114 @@
+.rates-container {
+    max-width: 1000px;
+    margin: 100px auto;
+    background-color: #F6F6F6;
+    box-shadow: 0px 2px 10px #00000029;
+    border-radius: 10px;
+    padding: 50px 99px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.rates-container h2 {
+    font-family: 'Segoe UI', 'Regular';
+    font-size: 59px;
+    text-align: center;
+    line-height: 79px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.rates-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.rates-col {
+    flex: auto;
+    border-radius: 10px;
+    padding: 27px 30px;
+    text-align: center;
+}
+
+.rates-col:nth-of-type(1) {
+    background-color: #81B562;
+}
+
+.rates-col:nth-of-type(2) {
+    background-color: #F0C9D2;
+}
+
+.rates-col:nth-of-type(3) {
+    background-color: #9FCDCD;
+}
+
+.rates-price {
+    font: normal normal normal 44px/58px Segoe UI;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.rates-price + span {
+    font: normal normal normal 24px/32px Segoe UI;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.rates-button {
+    margin-top: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    color: #000;
+    text-align: center;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    min-width: 216px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.rates-button:hover,
+.rates-button:focus,
+.rates-button:active {
+    border: 1px solid #707070;
+    background-color: #47a1fd;
+}
+
+@media screen and (max-width: 767px) {
+    .rates-container {
+        margin: 40px 35px;
+        padding: 46px 20px 30px 20px;
+    }
+    .rates-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .rates-col {
+        padding: 27px 34px 26px 34px;
+        max-width: 192px;
+        min-width: 192px;
+    }
+    .rates-container h2 {
+        font: normal normal normal 26px/35px Segoe UI;
+        margin-bottom: 32px;
+    }
+    .rates-price {
+        font: normal normal normal 30px/40px Segoe UI;
+    }
+    .rates-price + span {
+        font: normal normal normal 16px/21px Segoe UI;
+    }
+    .rates-button {
+        max-width: 194px;
+        min-width: 194px;
+        margin-top: 30px;
+        padding: 10px 0px;
+    }
+}
